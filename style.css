@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px; /* Total width of the grid */
+}
+
+.cell {
+    width: 60px; /* Adjust width to fit 16 cells in 960px */
+    height: 60px; /* Keep the height the same for squares */
+    border: 1px solid black;
+    box-sizing: border-box; /* Include border in the element's total width and height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: lightblue; /* Change color on hover */
+}
